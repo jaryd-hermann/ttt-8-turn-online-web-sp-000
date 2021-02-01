@@ -45,7 +45,7 @@ def turn(board)
   #capture the users move
   input = gets.strip
   index = input_to_index(input)
-  if condition
+  if valid_move?(board, index) == true
     move(board, index, value="X")
     display_board(board)
   else
