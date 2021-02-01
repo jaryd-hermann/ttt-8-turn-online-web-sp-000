@@ -45,7 +45,7 @@ def turn(board)
   #capture the users move
   input = gets.strip
   index = input_to_index(input)
-  until valid_move?(board, index) == true 
+  until valid_move?(board, index) == true
     turn(board)
   end
   move(board, index, value="X")
